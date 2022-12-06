@@ -2,7 +2,7 @@
 
 ### Description of my app:
 
-##### Title: YUP! (Your Unique Planner!)
+##### Title: YUP (Your Unique Planner!)
 
 ##### My app will be designed to allow users to create their own personalized planner. 
 
@@ -15,6 +15,19 @@
 * I want to give the user options to select different layouts. However, I'm not yet sure of how I'll be able to accomplish this but it is my personal extra credit goal :)
 
 ### Link to my Trello board:
-https://trello.com/b/jYgT04v0/your-unique-planner-yup
+https://trello.com/invite/b/jYgT04v0/ATTI0041e3df108795dcfc4529bd4a90d501674E4A7B/your-unique-planner-yup
 
 ### Mockups
+
+##### Landing Page (https://imgur.com/a/bX97Wug) - I have too many ideas on how I want my landing and authentication page to look like. I haven't finalized my thoughts. However, this link shows some ideas. Colors will definitely change. 
+
+##### Logo (https://imgur.com/I00Na0u) - this may end up having a transparent background instead of color
+##### Homepage (https://imgur.com/a/Xxl9ZD4)
+##### Index (https://imgur.com/a/OOYF1dO) - red text is whether it's urgent/not urgent
+##### Show (https://imgur.com/h2okKsU) - red text because it's urgent
+
+### ERD 
+(https://imgur.com/a/jmIUkWX)
+
+
+
