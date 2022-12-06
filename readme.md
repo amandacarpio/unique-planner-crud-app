@@ -2,7 +2,7 @@
 
 ### Description of my app:
 
-##### Title: YUP (Your Unique Planner!)
+##### Title: YUP (Your Unique Planner)
 
 ##### My app will be designed to allow users to create their own personalized planner. 
 
@@ -12,7 +12,7 @@
 
 * Users will also have the option to add multiple planners.
 
-* I want to give the user options to select different layouts. However, I'm not yet sure of how I'll be able to accomplish this but it is my personal extra credit goal :)
+* I want to give the user options to select different layouts. However, I'm not yet sure of how I'll be able to accomplish this but it is my personal extra credit goal.
 
 ### Link to my Trello board:
 https://trello.com/invite/b/jYgT04v0/ATTI0041e3df108795dcfc4529bd4a90d501674E4A7B/your-unique-planner-yup
