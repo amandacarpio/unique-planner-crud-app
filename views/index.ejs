@@ -1,1 +1,19 @@
-<h1>This is working</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/header.ejs')%>
+
+<body>
+    <h1>WEEKLY PLANNER</h1>
+
+    <div>
+            <a href="/planner/monday"><%=day[0]%></a>
+            <a href="/planner/tuesday"><%=day[1]%></a>
+            <a href="/planner/wednesday"><%=day[2]%></a>
+            <a href="/planner/thursday"><%=day[3]%></a>
+            <a href="/planner/friday"><%=day[4]%></a>
+            <a href="/planner/saturday/sunday"><%=day[5]%></a>
+    </div>
+
+
+</body>
+</html>

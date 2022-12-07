@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/header.ejs')%>
+    
+<body>
+    
+    <div>
+        <h1>MONDAY</h1>
+        <form action="/planner/monday" method="POST">
+            <label>To Do: <input type="text" name="taskName" placeholder="I need to..."/></label>
+            <label><input type="submit" value="Add task"/></label>
+        </form>
+        
+    </div>
+
+</body>
+</html>
