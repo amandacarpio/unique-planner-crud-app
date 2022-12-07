@@ -11,4 +11,8 @@ app.use(methodOverride('_method'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static('public'))
 
+app.get('/planner', (req,res) => {
+    res.render('index.ejs')
+})
+
 app.listen(PORT, () => console.log(`Running on port ${PORT}`))

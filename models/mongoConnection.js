@@ -6,7 +6,7 @@ const CONFIG = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }
-
+console.log(process.env.MONGO_URL)
 mongoose.connect(MONGO_URL, CONFIG)
 
 mongoose.connection
