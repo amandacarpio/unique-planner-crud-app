@@ -7,5 +7,11 @@
     <h1>MONDAY</h1> 
     <a href="/planner/monday/new"><button>Create new task</button></a>
 
+        <% for(task of tasks) { %>
+            <a href="/planner/monday/<%=task._id%>"><h3><%=task.taskName%></h3></a><p><%=task.urgent ? "urgent" : "" %></p>
+        <% } %>
+
+        <a href="/planner"><button>Back to Planner</button></a>
+
 </body>
 </html>

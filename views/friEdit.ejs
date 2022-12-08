@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/header.ejs')%>
+    
+<body>
+    
+    <div>
+        <h1>Edit Task</h1>
+        <form action="/planner/friday/<%=task._id%>?_method=PUT" method="POST">
+            <input type="hidden" name="day" value="friday">
+            <label>To Do: <input type="text" name="taskName" placeholder="I need to..."/></label>
+            <label>Date: <input type="text" name="date" placeholder="On..."/></label>
+            <label>To Do: <input type="text" name="taskDetail" placeholder="Don't forget..."/></label>
+            <label>Is this urgent? <input type="checkbox" name="urgent"></label>
+            <label><input type="submit" value="Update task"/></label>
+        </form>
+        <a href="/planner/friday"><button>Back to tasks</button>
+    </div>
+
+</body>
+</html>

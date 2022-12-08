@@ -4,6 +4,7 @@ const mongoose = require('./mongoConnection')
 const { Schema, model } = mongoose
 
 const tasksSchema = new Schema ({
+    day: String,
     date: String,
     taskName: String,
     taskDetail: String,

@@ -3,6 +3,13 @@
     <%- include('../partials/header.ejs')%>
     
 <body>
-    
+    <h1>SATURDAY & SUNDAY</h1> 
+    <a href="/planner/saturday/sunday/new"><button>Create new task</button></a>
+
+        <% for(task of tasks) { %>
+            <a href="/planner/saturday/sunday/<%=task._id%>"><h3><%=task.taskName%></h3></a><p><%=task.urgent ? "urgent" : "" %></p>
+        <% } %>
+
+        <a href="/planner"><button>Back to Planner</button></a>
 </body>
 </html>
