@@ -10,7 +10,7 @@ const app = express() // this is for our middlewares which are the next few line
 
 app.use(methodOverride('_method'))
 app.use(express.urlencoded({ extended: true }))
-app.use(express.static('public'))
+app.use("/static", express.static('public')) // so i can use files in my partials folder
 app.use('/planner', TasksRouter) // if we have this, no need for app.get
 
 app.listen(PORT, () => console.log(`Running on port ${PORT}`))

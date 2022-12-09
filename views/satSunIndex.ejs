@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/header.ejs')%>
+    <head>
+    <%- include('../partials/head.ejs')%>
+    <link rel="stylesheet" href="/static/">
+    </head>
     
 <body>
     <h1>SATURDAY & SUNDAY</h1> 
     <a href="/planner/saturday/sunday/new"><button>Create new task</button></a>
-
+        
         <% for(task of tasks) { %>
-            <a href="/planner/saturday/sunday/<%=task._id%>"><h3><%=task.taskName%></h3></a><p><%=task.urgent ? "urgent" : "" %></p>
+            <a href="/planner/saturday/sunday/<%=task._id%>"><h3><%=task.taskName%></h3><h5><%=task.date%></h5></a><p><%=task.urgent ? "urgent" : "" %></p>
         <% } %>
 
         <a href="/planner"><button>Back to Planner</button></a>

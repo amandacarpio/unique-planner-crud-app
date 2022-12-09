@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/header.ejs')%>
-
+    <head>
+    <%- include('../partials/head.ejs')%>
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    </head>
 <body>
-    <h1>WEEKLY PLANNER</h1>
+    <h1>Weekly Planner</h1>
 
-    <div>
-            <a href="/planner/monday"><%=day[0]%></a>
-            <a href="/planner/tuesday"><%=day[1]%></a>
-            <a href="/planner/wednesday"><%=day[2]%></a>
-            <a href="/planner/thursday"><%=day[3]%></a>
-            <a href="/planner/friday"><%=day[4]%></a>
-            <a href="/planner/saturday/sunday"><%=day[5]%></a>
+    <div class="mainContainer">
+            <div class="firstRow">
+                <a href="/planner/monday">Monday</a>
+                <a href="/planner/tuesday">Tuesday</a>
+            </div>
+            <div class="secondRow">
+                <a href="/planner/wednesday">Wednesday</a>
+                <a href="/planner/thursday">Thursday</a>
+            </div>
+            <div class="thirdRow">
+                <a href="/planner/friday">Friday</a>
+                <a href="/planner/saturday/sunday">Saturday & Sunday</a>
+            </div>
     </div>
 
-
 </body>
+
 </html>
