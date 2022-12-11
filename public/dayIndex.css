@@ -1,0 +1,62 @@
+body {
+    background: #FFF4E9;
+    text-align: center;
+    font-family: 'Limelight', cursive;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    -225deg,
+    #fff 0%,
+    #8d6e63 29%,
+    #decccc 67%,
+    #8d6e63 100%
+  );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 10s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+button {
+    background-color: white;
+    color: #8d6e63;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: 'Limelight', cursive;
+    border: none;
+    box-shadow: 0px 8px 15px #decccc;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+/* .taskNameDate {
+    display: flex;
+    justify-content: center;
+} */
+
+.newTaskButton:hover {
+    background-color: #a5d6a7;
+    color: white;
+    transition: 500ms;
+}
+
+.backToPlannerButton:hover {
+    background-color: #42281f;
+    color: white;
+    transition: 500ms;
+}

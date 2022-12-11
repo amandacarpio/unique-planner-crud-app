@@ -1,26 +1,53 @@
 body {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Limelight', cursive;
+    /* background: #c9ffbf; */
+    background: #FFF4E9;
+    min-width: 1408px;
+    min-height: 944px;
+    width: 80%;
+    margin: 0 auto;
 }
-
 h1 {
     text-align: center;
     font-size: 50px;
+    margin: 30px 0px 0px 80px;
+    color: #C3A29E
+} 
+
+.logoLine {
+    overflow: auto;
+    float: left;
+}
+
+img {
+    width: 130px;
+    height: 130px;
+    margin: 0px 0px 50px 80px;
 }
 
 .mainContainer {
     display: flex; /* flex will create a box that will put my children in a row by default */
-    flex-direction: column;
+    flex-wrap: wrap; /* sets whether flex items are forced onto one line or can wrap onto multipl */
+    justify-content: center;
+    margin: 50px 0px 0px 0px
+
 }
 
-.firstRow, .secondRow, .thirdRow {
+.monday, .tuesday, .wednesday, .thursday, .friday, .satSun {
     display: flex;
-    justify-content: center;
+    margin: 5px;
 }
 
 a {
-    width: 400px;
-    height: 200px;
-    border: 2px solid black;
-    font-size: 25px;
+    width: 500px;
+    height: 250px;
+    border: 1px solid #C3A29E;
+    font-size: 55px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    border-radius: 30px;
+    color: #6d4c41;
 }

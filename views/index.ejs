@@ -3,27 +3,38 @@
     <head>
     <%- include('../partials/head.ejs')%>
     <link rel="stylesheet" href="/static/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
     </head>
 <body>
-    <h1>Weekly Planner</h1>
-
+    <div class="logoLine">
+        <img src="https://i.imgur.com/t10gAFN.png">
+        <h1>W</h1>
+        <h1>E</h1>
+        <h1>E</h1>
+        <h1>K</h1>
+        <h1>L</h1>
+        <h1>Y</h1>
+    </div>
     <div class="mainContainer">
-            <div class="firstRow">
+            <div class="monday">
                 <a href="/planner/monday">Monday</a>
+            </div>
+            <div class="tuesday">
                 <a href="/planner/tuesday">Tuesday</a>
             </div>
-            <div class="secondRow">
+            <div class="wednesday">
                 <a href="/planner/wednesday">Wednesday</a>
+            </div>
+            <div class="thursday">
                 <a href="/planner/thursday">Thursday</a>
             </div>
-            <div class="thirdRow">
+            <div class="friday">
                 <a href="/planner/friday">Friday</a>
-                <a href="/planner/saturday/sunday">Saturday & Sunday</a>
             </div>
-    </div>
+            <div class="satSun">
+                <a href="/planner/saturday/sunday">Saturday & Sunday</a>
+        </div>
+</div>
 
 </body>
 

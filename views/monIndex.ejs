@@ -2,19 +2,24 @@
 <html lang="en">
     <head>
     <%- include('../partials/head.ejs')%>
-    <link rel="stylesheet" href="/static/">
+    <link rel="stylesheet" href="/static/dayIndex.css">
     </head>
 
 <body>
 
     <h1>MONDAY</h1> 
-    <a href="/planner/monday/new"><button>Create new task</button></a>
-
-        <% for(task of tasks) { %>
-            <a href="/planner/monday/<%=task._id%>"><h3><%=task.taskName%></h3></a><h5><%=task.date%></h5><p><%=task.urgent ? "urgent" : "" %></p>
+    <div class="taskNameDate">
+    <% for(task of tasks) { %>
+        <a href="/planner/monday/<%=task._id%>">
+            <h5>
+                <%=task.date%> <%=task.taskName%>
+                <%=task.urgent ? "urgent" : "" %>
+            </h5> 
+        </a>
         <% } %>
-
-        <a href="/planner"><button>Back to Planner</button></a>
+    </div>  
+        <a href="/planner/monday/new"><button class="newTaskButton">Create new task</button></a>
+        <a href="/planner"><button class="backToPlannerButton">Back to Planner</button></a>
 
 </body>
 </html>
