@@ -6,20 +6,27 @@
     </head>
 
 <body>
+    <div class="logo">
+    <img src="https://i.imgur.com/t10gAFN.png">    
+    </div>
 
-    <h1>MONDAY</h1> 
-    <div class="taskNameDate">
-    <% for(task of tasks) { %>
-        <a href="/planner/monday/<%=task._id%>">
-            <h5>
-                <%=task.date%> <%=task.taskName%>
-                <%=task.urgent ? "urgent" : "" %>
-            </h5> 
-        </a>
+        <div class="content">
+        <h1>MONDAY</h1>
+        <% for(let task of tasks) { %>
+            <h3>
+                <span class="taskDate"><%=task.date%> :</span> 
+                <span class="taskName"><a href="/planner/monday/<%=task._id%>"><%=task.taskName%></a></span>
+                <% if(task.urgent === true ){ %>
+                <span style="color: red"> - urgent</span>
+                <% } %>
+            </h3> 
         <% } %>
-    </div>  
-        <a href="/planner/monday/new"><button class="newTaskButton">Create new task</button></a>
-        <a href="/planner"><button class="backToPlannerButton">Back to Planner</button></a>
 
-</body>
-</html>
+        <div class="buttons">
+        <a href="/planner/monday/new"><button class="newTaskButton">Create New Task</button></a>
+        <a href="/planner"><button class="backToPlannerButton">Back to Planner</button></a>
+        </div>
+        </div>
+        <div class="space"></div>
+    </body>
+    </html>

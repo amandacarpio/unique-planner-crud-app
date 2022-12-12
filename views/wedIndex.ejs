@@ -2,17 +2,31 @@
 <html lang="en">
     <head>
     <%- include('../partials/head.ejs')%>
-    <link rel="stylesheet" href="/static/">
+    <link rel="stylesheet" href="/static/dayIndex.css">
     </head>
     
 <body>
-    <h1>WEDNESDAY</h1> 
-    <a href="/planner/wednesday/new"><button>Create new task</button></a>
-
-        <% for(task of tasks) { %>
-            <a href="/planner/wednesday/<%=task._id%>"><h3><%=task.taskName%></h3></a><h5><%=task.date%></h5><p><%=task.urgent ? "urgent" : "" %></p>
-        <% } %>
-
-        <a href="/planner"><button>Back to Planner</button></a>
+    <div class="logo">
+        <img src="https://i.imgur.com/t10gAFN.png">    
+        </div>
+    
+            <div class="content">
+            <h1>WEDNESDAY</h1>
+            <% for(let task of tasks) { %>
+                <h3>
+                    <span class="taskDate"><%=task.date%> :</span> 
+                    <span class="taskName"><a href="/planner/wednesday/<%=task._id%>"><%=task.taskName%></a></span>
+                    <% if(task.urgent === true ){ %>
+                    <span style="color: red"> - urgent</span>
+                    <% } %>
+                </h3> 
+            <% } %>
+    
+            <div class="buttons">
+            <a href="/planner/wednesday/new"><button class="newTaskButton">Create New Task</button></a>
+            <a href="/planner"><button class="backToPlannerButton">Back to Planner</button></a>
+            </div>
+            </div>
+            <div class="space"></div>
 </body>
 </html>

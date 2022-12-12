@@ -6,24 +6,28 @@
     </head>
     
 <body>
+    <div class="logo">
+    <img src="https://i.imgur.com/t10gAFN.png">     
+    </div>
+
+    <div class="content">
         <h1><%=task.taskName%></h1>
-        <h2>monday</h2>
-        <h2><%=task.date%></h2>
+        <h2>Monday, <%=task.date%></h2>
         <p><%=task.taskDetail%></p>
-        <h2 class="urgency">
-            <%=task.urgent ? "URGENT, don't forget!" : "Not urgent, but don't forget!"%>
-        </h2>
-        <!-- <% if(task.urgent === true ){ %>
-            return style="color:red"
-            else {
-                return style="color:blue"
-            }
-        <% } %> -->
+        <% if(task.urgent === true ){ %>
+            <h2 style="color: red">Urgent, don't forget!</h2>
+            <% } else { %>
+                <h2 style="color: #400400">Not urgent, but don't forget!</h2>
+            <% } %>
         
+            <div class="buttons">
         <a href="/planner/monday"><button class="backToTaskButton">Back to Tasks</button></a>
         <a href="/planner/monday/<%=task._id%>/edit"><button class="editTaskButton">Edit Task</button></a>
         <form action="/planner/monday/<%=task._id%>?_method=DELETE" method="POST">
         <input class="deleteButton" type="submit" value="Delete Task">
         </form>
-</body>
+    </div>
+    </div>
+    <div class="space"></div>
+    </body>
 </html>

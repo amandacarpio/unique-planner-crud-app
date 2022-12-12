@@ -2,12 +2,12 @@ body {
     background: #FFF4E9;
     text-align: center;
     font-family: 'Limelight', cursive;
+    display: flex;
+    min-width: 1017px;
 }
 
 h1 {
-    text-align: center;
-    font-size: 60px;
-    text-transform: uppercase;
+    font-size: 55px;
     background-image: linear-gradient(
     -225deg,
     #fff 0%,
@@ -32,6 +32,10 @@ h1 {
   }
 }
 
+a, .taskDate {
+  color: #600701;
+}
+
 button {
     background-color: white;
     color: #8d6e63;
@@ -40,14 +44,26 @@ button {
     font-family: 'Limelight', cursive;
     border: none;
     box-shadow: 0px 8px 15px #decccc;
-    margin: 0px 5px;
+    margin: 20px 5px;
     cursor: pointer;
 }
 
-/* .taskNameDate {
-    display: flex;
-    justify-content: center;
-} */
+img {
+  width: 130px;
+  height: 130px;
+  margin: 0px 0px 0px 20px;
+  overflow: auto;
+  float: left;
+}
+
+.logo, .content, .space {
+  width: 33%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
 
 .newTaskButton:hover {
     background-color: #a5d6a7;

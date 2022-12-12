@@ -2,21 +2,32 @@
 <html lang="en">
     <head>
     <%- include('../partials/head.ejs')%>
-    <link rel="stylesheet" href="/static/">
+    <link rel="stylesheet" href="/static/show.css">
     </head>
     
 <body>
-    <h1>SATURDAY & SUNDAY</h1>
-
-        <h1><%=task.taskName%></h1>
-        <h3><%=task.date%></h3>
-        <p><%=task.taskDetail%></p>
-        <h3><%=task.urgent ? "URGENT, don't forget!" : "Not urgent, but here's a reminder!"%></h3>
-        
-        <a href="/planner/saturday/sunday"><button>Back to tasks</button>
-        <a href="/planner/saturday/sunday/<%=task._id%>/edit"><button>Edit Task</button></a>
-        <form action="/planner/saturday/sunday/<%=task._id%>?_method=DELETE" method="POST">
-            <input type="submit" value="Delete Task">
-        </form>
+    <div class="logo">
+        <img src="https://i.imgur.com/t10gAFN.png">     
+        </div>
+    
+        <div class="content">
+            <h1><%=task.taskName%></h1>
+            <h2><%=task.date%></h2>
+            <p><%=task.taskDetail%></p>
+            <% if(task.urgent === true ){ %>
+                <h2 style="color: red">Urgent, don't forget!</h2>
+                <% } else { %>
+                    <h2 style="color: #400400">Not urgent, but don't forget!</h2>
+                <% } %>
+            
+                <div class="buttons">
+            <a href="/planner/saturday/sunday"><button class="backToTaskButton">Back to Tasks</button></a>
+            <a href="/planner/saturday//sunday/<%=task._id%>/edit"><button class="editTaskButton">Edit Task</button></a>
+            <form action="/planner/saturday/sunday/<%=task._id%>?_method=DELETE" method="POST">
+            <input class="deleteButton" type="submit" value="Delete Task">
+            </form>
+        </div>
+        </div>
+        <div class="space"></div>
 </body>
 </html>

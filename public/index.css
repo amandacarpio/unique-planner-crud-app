@@ -1,6 +1,5 @@
 body {
     font-family: 'Limelight', cursive;
-    /* background: #c9ffbf; */
     background: #FFF4E9;
     min-width: 1408px;
     min-height: 944px;
@@ -14,15 +13,15 @@ h1 {
     color: #C3A29E
 } 
 
-.logoLine {
-    overflow: auto;
-    float: left;
-}
-
 img {
     width: 130px;
     height: 130px;
     margin: 0px 0px 50px 80px;
+}
+
+.logoLine {
+    overflow: auto;
+    float: left;
 }
 
 .mainContainer {
