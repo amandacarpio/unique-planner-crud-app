@@ -2,22 +2,26 @@
 <html lang="en">
     <head>
     <%- include('../partials/head.ejs')%>
-    <link rel="stylesheet" href="/static/">
+    <link rel="stylesheet" href="/static/newEdit.css">
     </head>
     
 <body>
     
-    <div>
-        <h1>MONDAY</h1>
+    <div class="container">
+        <h1>
+            New Monday Task
+        </h1>
         <form action="/planner/monday" method="POST">
             <input type="hidden" name="day" value="monday">
             <label>To Do: <input type="text" name="taskName" placeholder="I need to..."/></label>
             <label>Date: <input type="text" name="date" placeholder="On..."/></label>
-            <label>To Do: <input type="text" name="taskDetail" placeholder="Don't forget..."/></label>
-            <label>Is this urgent? <input type="checkbox" name="urgent"></label>
-            <label><input type="submit" value="Add task"/></label>
+            <label>Details: <input type="text" name="taskDetail" placeholder="Don't forget..."/></label> 
+            <div class="urgencyCheckbox"><label>Is this urgent? <input type="checkbox" name="urgent"></label></div>
+            <input class="addTaskButtton" type="submit" value="Add Task"/>
         </form>
-        <a href="/planner/monday"><button>Back to tasks</button>
+        
+        <a href="/planner/monday"><button>Back to Tasks</button></a>
+
     </div>
 
 </body>

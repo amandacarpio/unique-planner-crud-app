@@ -32,8 +32,12 @@ h1 {
   }
 }
 
-a, .taskDate {
+.taskDate {
   color: #600701;
+}
+
+a {
+  color: #8d6e63;
 }
 
 button {

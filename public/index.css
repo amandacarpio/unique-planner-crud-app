@@ -1,22 +1,27 @@
 body {
     font-family: 'Limelight', cursive;
     background: #FFF4E9;
-    min-width: 1408px;
-    min-height: 944px;
-    width: 80%;
-    margin: 0 auto;
 }
+
 h1 {
     text-align: center;
     font-size: 50px;
-    margin: 30px 0px 0px 80px;
+    margin: 30px 0px 0px 40px;
     color: #C3A29E
 } 
 
 img {
     width: 130px;
     height: 130px;
-    margin: 0px 0px 50px 80px;
+    margin: 0px 0px 50px 40px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    min-width: 990px;
+    max-width: 1408px;
+    min-height: 870px;
+    width: 80%;
 }
 
 .logoLine {
@@ -28,8 +33,7 @@ img {
     display: flex; /* flex will create a box that will put my children in a row by default */
     flex-wrap: wrap; /* sets whether flex items are forced onto one line or can wrap onto multipl */
     justify-content: center;
-    margin: 50px 0px 0px 0px
-
+    margin: 50px 0px 0px 0px;
 }
 
 .monday, .tuesday, .wednesday, .thursday, .friday, .satSun {

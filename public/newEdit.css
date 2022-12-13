@@ -1,0 +1,38 @@
+body {
+    background: #FFF4E9;
+    font-family: 'Limelight', cursive;
+    /* display: flex;  */
+}
+
+h1 {
+    font-size: 45px;
+    color: #8d6e63;
+}
+
+label {
+    font-size: 25px;
+}
+
+.urgencyCheckbox {
+    color: red;
+    margin-top: 25px;
+}
+
+button, .addTaskButtton, .updateTaskButton {
+    background-color: white;
+    color: #8d6e63;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: 'Limelight', cursive;
+    border: none;
+    box-shadow: 0px 8px 15px #decccc;
+    margin: 8px 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #42281f;
+    color: white;
+    transition: 500ms;
+}
